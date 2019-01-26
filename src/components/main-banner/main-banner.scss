@@ -1,11 +1,15 @@
 .main-banner {
-  background: url("./../images/bg_main-banner.jpg") top center no-repeat;
-  min-height: 500px;
-  display: flex;
+  //max-height: 100vh;
+
+  &__area {
+    background: url("./../images/bg_main-banner.jpg") top center no-repeat;
+    min-height: 500px;
+  }
 
   &__container {
     display: flex;
     justify-content: flex-end;
+
 
     @media(max-width: 992px) {
       justify-content: center;

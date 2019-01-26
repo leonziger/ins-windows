@@ -1,4 +1,5 @@
 .nav {
+  padding: 0;
   width: 100%;
 
   &__list {
@@ -19,6 +20,10 @@
     border-left: 1px solid rgba(white, 0.3);
     transition: $delay;
 
+    @media(max-width: 992px) {
+      border-left: transparent;
+    }
+
     &:active,
     &:hover {
       cursor: pointer;
@@ -33,6 +38,11 @@
       max-width: 42px;
       padding: 12px 10px;
       border-right: 1px solid rgba(white, 0.3);
+
+      @media(max-width: 992px) {
+        border-right: transparent;
+        margin: 0 auto;
+      }
 
       &:hover {
         cursor: pointer;
