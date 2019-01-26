@@ -1,0 +1,25 @@
+.main-banner {
+  background: url("./../images/bg_main-banner.jpg") top center no-repeat;
+  min-height: 500px;
+  display: flex;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+
+    @media(max-width: 992px) {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__services {
+    margin-top: 127px;
+    width: 100%;
+    max-width: 451px;
+    min-height: 164px;
+
+  }
+
+}
+

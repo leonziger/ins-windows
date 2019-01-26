@@ -1,0 +1,130 @@
+.main-header {
+
+  &_sticky {
+    background: darken(#00bff3, 5%);
+    min-height: 60px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 87px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      padding-right: 9px;
+    }
+
+
+    &-title {
+      color: #4f555a;
+      font-size: 26px;
+      font-weight: 900;
+      text-transform: uppercase;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 95px;
+
+      @media(max-width: 1200px) {
+        padding-right: 30px;
+      }
+
+      @media(max-width: 820px) {
+        display: none;
+      }
+    }
+  }
+
+
+  &__slogan {
+    font-size: 14px;
+    color: #2f3131;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 95px;
+
+    &_bold {
+      font-weight: 700;
+    }
+
+    @media(max-width: 1140px) {
+      display: none;
+    }
+
+  }
+
+  &__contacts {
+    display: flex;
+
+    &-phone {
+      display: flex;
+      align-items: center;
+      font-family: 'Cuprum', sans-serif;
+      color: #2f3131;
+      font-size: 26px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 47px;
+
+      @media(max-width: 800px) {
+        padding-right: 10px;
+        font-size: 20px;
+      }
+
+      @media(max-width: 500px) {
+        display: none;
+      }
+    }
+
+    &-button {
+      align-self: center;
+      padding: 5px 19px;
+
+      @media(max-width: 375px) {
+        padding: 5px 10px;
+      }
+    }
+
+    &-icon {
+      height: 20px;
+      width: 20px;
+      margin-right: 9px;
+    }
+
+    &-slogan {
+      color: #ffffff;
+      font-family: 'Cuprum', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  &__nav {
+    background: #3fa926;
+    box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.1);
+
+    @media(max-width: 992px) {
+      //display: none;
+    }
+  }
+
+  &__menu-toggle {
+    display: none;
+    padding-left: 10px;
+
+    @media(max-width: 992px) {
+      display: block;
+    }
+  }
+
+}

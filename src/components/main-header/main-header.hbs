@@ -1,0 +1,30 @@
+<header class="main-header">
+    <div class="container main-header__container">
+        <div class="main-header__top">
+            <div class="main-header__logo">
+                <img src="./images/logo.png" alt="" class="main-header__logo-icon">
+                <div class="main-header__logo-title">Inside Windows</div>
+            </div>
+            <h1 class="main-header__slogan">
+                Окна от <span class="main-header__slogan_bold">лучших</span> мировых производителей
+            </h1>
+            <div class="main-header__contacts">
+                <a href="tel:380448122312" class="main-header__contacts-phone">+ 38 (044) 812-23-12</a>
+            </div>
+            <div class="button main-header__contacts-button">
+                {{> icon iconName="phone" classNames="main-header__contacts-icon" }}
+                <div class="main-header__contacts-slogan">Заказать звонок</div>
+            </div>
+            <div class="main-header__menu-toggle">
+                {{> menu-toggle }}
+            </div>
+        </div>
+    </div>
+    <div class="main-header__nav">
+        <div class="container">
+            {{> nav }}
+        </div>
+    </div>
+</header>
+
+
