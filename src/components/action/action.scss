@@ -1,0 +1,90 @@
+.action {
+  background: url('./../images/actions.jpg') top center no-repeat;
+  min-height: 329px;
+
+  &__container {
+    padding-top: 46px;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 36px;
+  }
+
+  &__description {
+    width: 208px;
+    height: 14px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 57px;
+  }
+
+  &__link {
+    color: #fff600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__content {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &-item {
+      width: 85px;
+      height: 100px;
+      box-shadow: -3px 5px 16px rgba(0, 0, 0, 0.09);
+      background-color: #ffffff;
+      margin-left: 10px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      @media(max-width: 440px) {
+        width: 60px;
+        height: 90px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    &-value {
+      display: flex;
+      color: #43aa26;
+      font-family: 'Cuprum', sans-serif;
+      font-size: 56px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px;
+
+      @media(max-width: 440px) {
+        font-size: 48px;
+      }
+    }
+
+    &-text {
+      display: flex;
+      color: #2f3131;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

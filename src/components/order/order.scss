@@ -1,5 +1,6 @@
 .order {
-  margin-top: -92px;
+  //margin-top: -92px;
+  //position: absolute;
 
   &__container {
     display: flex;
@@ -82,6 +83,16 @@
 
   &__delimiter {
     @media(max-width: 768px) {
+      display: none;
+    }
+  }
+
+
+  &__delimiter2 {
+    display: flex;
+    align-self: center;
+    transform: rotate(90deg);
+    @media(min-width: 768px) {
       display: none;
     }
   }

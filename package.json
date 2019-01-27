@@ -46,6 +46,7 @@
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
     "jquery": "^3.3.1",
+    "jquery-countdown": "^2.2.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
     "vanilla-text-mask": "^5.1.1",

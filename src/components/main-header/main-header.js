@@ -3,7 +3,7 @@ import vex from 'vex-js';
 import callback from '../callback/callback';
 
 
-$('.main-header__callback-link').click(function (e) {
+$('.main-header__contacts-button').click(function (e) {
     e.preventDefault();
     const modal = $(`[data-modal=callback]`);
 

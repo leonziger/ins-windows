@@ -59,34 +59,37 @@
     }
   }
 
+  .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+    opacity: 0;
+  }
+
   .slick-next {
-    right: -25px;
-    [dir="rtl"] & {
-      left: -25px;
-      right: auto;
-    }
-    &:before {
-      content: '>';
-      [dir="rtl"] & {
-        content: '<';
-      }
+    width: 37px;
+    height: 37px;
+    right: -18px;
+    top: 46%;
+    background-image: url("./../images/vert_delimiter2.png");
+    z-index: 5;
+
+    &:hover {
+      background-image: url("./../images/vert_delimiter.png");
     }
   }
 
   .slick-prev {
+    width: 37px;
+    height: 37px;
+    left: -18px;
+    top: 38%;
+    transform: rotate(-180deg);
+    background-image: url("./../images/vert_delimiter2.png");
+    z-index: 5;
 
-    &:before{
-      margin: 20% auto 0;
-      display: block;
-      content: '';
-      height: 10px;
-      width: 10px;
-      border: 2px solid #1e8aef;
-      border-left-color: transparent;
-      border-bottom-color: transparent;
-      transition: .4s;
-      transform: rotate(-135deg);
+    &:hover {
+      transform: rotate(-180deg);
+      background-image: url("./../images/vert_delimiter.png");
     }
+
   }
 
 }
