@@ -7,3 +7,4 @@ import './components/menu-toggle/menu-toggle';
 import './components/modal/modal';
 import './components/callback/callback';
 import './components/action/action';
+import './components/video/video';
