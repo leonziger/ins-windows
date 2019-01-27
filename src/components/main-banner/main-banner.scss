@@ -1,10 +1,6 @@
 .main-banner {
-  max-height: 100vh;
-
-  &__area {
-    background: url("./../images/bg_main-banner.jpg") top center no-repeat;
-    min-height: 500px;
-  }
+  min-height: 100vh;
+  background: url("./../images/bg_main-banner.jpg") top center / cover no-repeat;
 
   &__container {
     display: flex;
@@ -22,6 +18,11 @@
     width: 100%;
     max-width: 451px;
     min-height: 164px;
+
+    @media(max-width: 1240px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
 
     @media(max-width: 576px) {
       width: 95%;

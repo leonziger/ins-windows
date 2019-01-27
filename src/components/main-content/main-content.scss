@@ -1,8 +1,9 @@
 .main-content {
-  background: url('./../images/bg__main-content.png') top center no-repeat;
+  background: url('./../images/bg__main-content.png') top center / cover no-repeat;
   min-height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 19px;
 }
