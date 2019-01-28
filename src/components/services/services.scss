@@ -75,14 +75,12 @@
     width: 37px;
     height: 37px;
     right: -17px;
-    top: 39%;
+    top: 51%;
     z-index: 5;
-    transform: rotate(180deg);
-    background-image: url("./../images/arrow.png");
+    background-image: url("./../images/arrow_next.png");
 
     &:hover {
-      transform: rotate(180deg);
-      background-image: url("./../images/arrow_highlighted.png");
+      background-image: url("./../images/arrow_next_hover.png");
     }
 
   }
@@ -92,11 +90,11 @@
     height: 37px;
     left: -17px;
     top: 51%;
-    background-image: url("./../images/arrow.png");
+    background-image: url("./../images/arrow_prev.png");
     z-index: 5;
 
     &:hover {
-      background-image: url("./../images/arrow_highlighted.png");
+      background-image: url("./../images/arrow_prev_hover.png");
     }
 
   }

@@ -12,15 +12,20 @@ slider.slick({
 
     responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1221,
             settings: {
-                slidesToShow: 2
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
         },
         {
-            breakpoint: 768,
+            breakpoint: 801,
             settings: {
-                slidesToShow: 2
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }
     ]
