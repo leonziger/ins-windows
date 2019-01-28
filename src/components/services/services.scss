@@ -1,11 +1,11 @@
 .services {
-
-  &__item {
-    display: flex;
-    flex-direction: column;
     box-shadow: -4px 7px 18px rgba(0, 0, 0, 0.2), inset 0 4px 0 #43aa26;
     background-color: #ffffff;
-    padding: 25px 30px 50px;
+
+  &__item {
+    padding: 25px 30px 45px;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 
     &-title {
@@ -27,7 +27,7 @@
   }
 
   .slick-dots {
-    bottom: 18px;
+    bottom: 13px;
     left: 41%;
 
     li {
@@ -64,31 +64,39 @@
     opacity: 0;
   }
 
+  .slick-prev,
+  .slick-next {
+    &:before {
+      content: '';
+    }
+  }
+
   .slick-next {
     width: 37px;
     height: 37px;
-    right: -18px;
-    top: 46%;
-    background-image: url("./../images/vert_delimiter2.png");
+    right: -17px;
+    top: 39%;
     z-index: 5;
+    transform: rotate(180deg);
+    background-image: url("./../images/arrow.png");
 
     &:hover {
-      background-image: url("./../images/vert_delimiter.png");
+      transform: rotate(180deg);
+      background-image: url("./../images/arrow_highlighted.png");
     }
+
   }
 
   .slick-prev {
     width: 37px;
     height: 37px;
-    left: -18px;
-    top: 38%;
-    transform: rotate(-180deg);
-    background-image: url("./../images/vert_delimiter2.png");
+    left: -17px;
+    top: 51%;
+    background-image: url("./../images/arrow.png");
     z-index: 5;
 
     &:hover {
-      transform: rotate(-180deg);
-      background-image: url("./../images/vert_delimiter.png");
+      background-image: url("./../images/arrow_highlighted.png");
     }
 
   }

@@ -1,6 +1,7 @@
 .main-banner {
   background: url("./../images/bg_main-banner.jpg") top center / cover no-repeat;
-  min-height: 100vh;
+  //min-height: 100vh;
+  min-height: 634px;
 
   &__container {
     display: flex;

@@ -1,9 +1,13 @@
 .action {
   background: url('./../images/actions.jpg') top center no-repeat;
-  min-height: 329px;
+  min-height: 330px;
+
+  @media(max-width: 800px) {
+    background: url('./../images/actions_800.jpg') top center no-repeat;
+  }
 
   &__container {
-    padding-top: 46px;
+    padding-top: 48px;
   }
 
   &__title {
