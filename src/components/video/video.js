@@ -1,8 +1,9 @@
 import $ from 'jquery';
 import 'rangeslider.js';
+import 'jquery-ui';
 
-const slider = $('.video__list');
-slider.slick({
+const slickCarousel = $('.video__list');
+slickCarousel.slick({
     dots: false,
     arrows:false,
     infinite: false,
@@ -34,6 +35,18 @@ slider.slick({
 $('#video-range').rangeslider({
     polyfill: false,
     onSlide: function(position, value) {
-        slider.slick('slickGoTo', value);
+        slickCarousel.slick('slickGoTo', value);
     }
 });
+//
+// $( function() {
+//     var handle = $( "#custom-handle" );
+//     $( "#slider" ).slider({
+//         create: function() {
+//             handle.text( $( this ).slider( "value" ) );
+//         },
+//         slide: function( event, ui ) {
+//             handle.text( ui.value );
+//         }
+//     });
+// } );

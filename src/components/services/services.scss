@@ -32,6 +32,7 @@
 
     li {
       margin: 0 1px;
+      transition: $delay;
 
       button {
         &:before {
@@ -78,6 +79,7 @@
     top: 51%;
     z-index: 5;
     background-image: url("./../images/arrow_next.png");
+    transition: $delay;
 
     &:hover {
       background-image: url("./../images/arrow_next_hover.png");
@@ -92,6 +94,7 @@
     top: 51%;
     background-image: url("./../images/arrow_prev.png");
     z-index: 5;
+    transition: $delay;
 
     &:hover {
       background-image: url("./../images/arrow_prev_hover.png");
