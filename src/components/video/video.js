@@ -23,7 +23,6 @@ slider.slick({
         {
             breakpoint: 801,
             settings: {
-                centerMode: true,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }

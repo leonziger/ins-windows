@@ -13,6 +13,10 @@
     }
 
     @media(max-width: 480px) {
+      max-width: 400px;
+    }
+
+    @media(max-width: 400px) {
       max-width: 300px;
     }
 
@@ -87,6 +91,10 @@
       background-image: url('./../images/play.png');
       bottom: -25px;
       position: absolute;
+
+      @media (max-width: 480px) {
+        display: none;
+      }
     }
 
     &-content {
@@ -95,6 +103,11 @@
       padding-bottom: 6px;
       width: 100%;
       max-width: 370px;
+
+      @media(max-width: 480px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
 
     &-title {
@@ -111,6 +124,10 @@
       font-size: 14px;
       font-weight: 400;
     }
+  }
+
+  .slick-list {
+    padding: 0 25px!important;
   }
 
 
@@ -146,10 +163,5 @@
     }
 
   }
-
-  //.slick-slide {
-  //  width: 100%;
-  //  max-width: 388px;
-  //}
 
 }
