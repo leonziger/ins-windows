@@ -1,6 +1,7 @@
 .main-header {
   background: #fff;
   transition: $delay;
+  z-index: 50;
 
   &_sticky {
     background: darken(#00bff3, 5%);
@@ -120,22 +121,24 @@
     transition: $delay;
 
     @media(max-width: 992px) {
-      display: none;
+      padding-top: 60px;
+      width: 100%;
+      max-width: 260px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: darken(#3fa926,15%);
+      opacity: 0.8;
+      transform: translateX(-800px);
+      transition: .4s;
+      z-index: 45;
     }
   }
 
   .is-open {
-    display: block;
+    transform: translateX(0);
 
-
-    .nav {
-      left: 0;
-      top: 87px;
-      bottom: 0;
-      right: 0;
-      z-index: 555;
-      position: fixed;
-    }
   }
 
 
