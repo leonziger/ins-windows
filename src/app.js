@@ -1,4 +1,5 @@
 window.$ = window.jQuery = require('jquery');
+// require('jquery-ui-dist/jquery-ui.min');
 import 'slick-carousel';
 
 import './components/main-header/main-header';

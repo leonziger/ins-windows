@@ -1,6 +1,5 @@
 import $ from 'jquery';
 import 'rangeslider.js';
-import 'jquery-ui';
 
 const slickCarousel = $('.video__list');
 slickCarousel.slick({
@@ -38,15 +37,16 @@ $('#video-range').rangeslider({
         slickCarousel.slick('slickGoTo', value);
     }
 });
-//
+
+
 // $( function() {
 //     var handle = $( "#custom-handle" );
 //     $( "#slider" ).slider({
-//         create: function() {
-//             handle.text( $( this ).slider( "value" ) );
-//         },
+//         min: 1,
+//         max: 15,
 //         slide: function( event, ui ) {
-//             handle.text( ui.value );
+//             // handle.text( ui.value );
+//             slickCarousel.slick('slickGoTo', ui.value)
 //         }
 //     });
 // } );
