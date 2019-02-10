@@ -1,9 +1,9 @@
 .video {
   padding-top: 25px;
   padding-bottom: 40px;
-  //display: none;
 
   &__container {
+
     @media(max-width: 1220px) {
       max-width: 780px;
     }
@@ -22,6 +22,10 @@
 
   }
 
+  &__wrapper {
+    overflow: hidden;
+  }
+
   &__title {
     color: #2f3131;
     font-family: 'Cuprum', sans-serif;
@@ -32,6 +36,7 @@
   }
 
   &__list {
+    display: flex;
     margin-left: -15px;
     margin-right: -15px;
 
@@ -40,24 +45,26 @@
     }
   }
 
-
   &__item{
-    padding-right: 15px;
+    flex-shrink: 0;
+    width: 400px;
+    text-decoration: none;
     padding-left: 15px;
-    margin-bottom: 30px;
+    padding-right: 15px;
+    margin-bottom: 31px;
 
-    @media(max-width: 1220px) {
-      margin-left: 15px;
-      margin-right: 15px;
-      width: auto!important;
-    }
-
-    @media(max-width: 800px) {
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-bottom: 60px;
-      width: auto!important;
-    }
+    //@media(max-width: 1220px) {
+    //  margin-left: 15px;
+    //  margin-right: 15px;
+    //  width: auto!important;
+    //}
+    //
+    //@media(max-width: 800px) {
+    //  margin-left: 10px;
+    //  margin-right: 10px;
+    //  margin-bottom: 60px;
+    //  width: auto!important;
+    //}
 
     &:hover {
       cursor: pointer;
@@ -82,14 +89,19 @@
 
     &-clip {
       position: relative;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+
+      img {
+        max-height: 240px !important;
+        width: 370px !important;
+      }
     }
 
     &-thumbler {
       height: 50px;
       width: 50px;
       background-image: url('./../images/play.png');
-      bottom: -25px;
+      bottom: -24px;
       position: absolute;
 
       @media (max-width: 480px) {
@@ -133,6 +145,7 @@
 
   &__slider {
     height: 3px;
+    position: relative;
   }
 
   .rangeslider {
@@ -164,15 +177,5 @@
 
   }
 
-}
-
-#custom-handle {
-  display: block;
-  width: 3em;
-  height: 1.6em;
-  top: 50%;
-  margin-top: -.8em;
-  text-align: center;
-  line-height: 1.6em;
 }
 
